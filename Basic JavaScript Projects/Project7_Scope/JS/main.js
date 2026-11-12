@@ -18,9 +18,6 @@ function Add_numbers_4() {
     document.getElementById("result4").textContent = X + 20;
 };
 
-Add_numbers_3();
-Add_numbers_4();
-
 function Add_numbers_5() {
     var X=10;
     document.getElementById("result5").textContent = X + 200;
@@ -31,5 +28,10 @@ function Add_numbers_6() {
     document.getElementById("result6").textContent = X + 20;
 };
 
-Add_numbers_5();
-Add_numbers_6();
+function get_date(){
+    if (new Date().getHours() < 24) {
+        document.getElementById("Value").textContent = "How are you today?";
+    } else {
+        document.getElementById("Value").textContent = "Good evening!";
+    }
+};
